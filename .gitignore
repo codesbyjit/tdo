@@ -1,19 +1,35 @@
-# Ignore build artifacts and binaries
-target/
-!tdo
-!tdo.exe
-dist/
-build/
+# =====================================
+# 🚀 tdo .gitignore
+# =====================================
 
-# Node/Rust/Env files
-node_modules/
-.env
+# Ignore general Rust build artifacts
+/target/*
+
+# But keep the release binary for distribution
+!/target/release/
+!/target/release/tdo
+
+# Ignore all other build cache inside release
+/target/release/*.d
+/target/release/.cargo-lock
+/target/release/.fingerprint/
+/target/release/deps/
+/target/release/incremental/
+/target/release/build/
+/target/release/examples/
+/target/release/*.json
+
+# Ignore Cargo temporary files
+Cargo.lock
 *.log
 
-# OS specific
+# Ignore system/editor-specific files
 .DS_Store
 Thumbs.db
+*.swp
+.idea/
+.vscode/
 
-# Installer caches
-*.tar.gz
-*.zip
+# Ignore temporary installer downloads
+/tmp/
+tdo_installer.*

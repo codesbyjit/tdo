@@ -19,6 +19,11 @@ Built in **Rust** for speed, safety, and reliability.
 - ⚙️ Simple and intuitive CLI commands  
 
 ---
+### 🧩 Demo
+
+![demo](./demo.png)
+
+---
 
 ## 🚀 Installation  
 
